@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="backdrop"></div>
     <header class="container">
       <a href="#" class="main-logo"
         ><img src="./images/logo.svg" alt="Main logo"
@@ -105,20 +106,30 @@
           <li class="nav-item">
             <a href="#" class="nav-item__link">Careers</a>
           </li>
-          <li class="nav-item"><a href="" class="nav-item__link">About</a></li>
+          <li class="nav-item">
+            <a href="" class="nav-item__link">About</a>
+          </li>
         </ul>
         <ul class="usr-login">
           <li><a class="btn-login" href="#">Login</a></li>
           <li><a class="btn-register" href="#">Register</a></li>
         </ul>
+        <button class="mobile-icons" type="button">
+          <ion-icon class="close-mobile-menu" name="close-outline"></ion-icon>
+        </button>
       </nav>
+      <button class="mobile-icons" type="button">
+        <ion-icon class="open-mobile-menu" name="menu-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="container">
         <div class="hero-container">
           <div class="hero-left">
             <article class="hero-textbox">
-              <h1 class="hero-title">Make <br />remote work</h1>
+              <h1 class="hero-title">
+                Make <span class="hero-title-break">remote work</span>
+              </h1>
               <p class="hero-description">
                 Get your team in sync, no matter your location. Streamline
                 processes, create team rituals, and watch productivity soar.
@@ -128,10 +139,10 @@
               </div>
             </article>
             <div class="brand-logos">
-              <img src="./images/client-databiz.svg" alt="" />
-              <img src="./images/client-audiophile.svg" alt="" />
-              <img src="./images/client-meet.svg" alt="" />
-              <img src="./images/client-maker.svg" alt="" />
+              <img src="./images/client-databiz.svg" alt="Company logo" />
+              <img src="./images/client-audiophile.svg" alt="Company logo" />
+              <img src="./images/client-meet.svg" alt="Company logo" />
+              <img src="./images/client-maker.svg" alt="Company logo" />
             </div>
           </div>
           <div class="hero-img">
