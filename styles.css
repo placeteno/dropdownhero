@@ -34,7 +34,9 @@ ul {
   margin: 0 auto;
 }
 
-/* ==== HEADER ==== */
+/* ============ 
+    HEADER 
+   ============ */
 
 header {
   margin-bottom: 8rem;
@@ -56,7 +58,6 @@ header {
   gap: 3.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  font-weight: 500;
 }
 
 .nav-item:nth-of-type(1) ion-icon[name="chevron-down-outline"],
@@ -127,7 +128,6 @@ header {
   gap: 3.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  font-weight: 500;
 }
 
 .btn-login:hover {
@@ -145,8 +145,85 @@ header {
   color: var(--almost-black);
 }
 
-.nav-icon {}
+/* ============ 
+    HERO SECTION 
+   ============ */
 
+.hero-container {
+  max-width: 115rem;
+  margin: 0 auto;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70rem;
+}
+
+.hero-textbox {
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hero-title {
+  font-size: 8rem;
+  color: var(--almost-black);
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  color: var(--medium-gray);
+  line-height: 1.5;
+  padding-right: 8rem;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+  border: 1px solid var(--almost-black);
+  border-radius: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  transition: all .2s;
+}
+
+.btn-hero:hover {
+  color: var(--almost-black);
+  background-color: var(--almost-white);
+}
+
+.btn-hero-container {
+  margin-bottom: 3rem;
+}
+
+.brand-logos {}
+
+.brand-logos img {
+  margin-right: 3rem;
+}
+
+.hero-img {
+  background-image: url(/images/image-hero-desktop.png);
+  background-size: cover;
+  height: 70rem;
+}
+
+
+
+
+/* ============ 
+    FOOTER 
+   ============ */
 
 
 .attribution {
