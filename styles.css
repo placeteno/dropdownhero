@@ -1,0 +1,160 @@
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--almost-white);
+  font-family: 'Epilogue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--medium-gray);
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==== GENERAL STYLES ==== */
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+/* ==== HEADER ==== */
+
+header {
+  margin-bottom: 8rem;
+  padding: 3rem 4rem 0 4rem;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+
+.nav-items {
+  display: flex;
+  gap: 3.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-item:nth-of-type(1) ion-icon[name="chevron-down-outline"],
+.nav-item:nth-of-type(2) ion-icon[name="chevron-down-outline"] {
+  transition: all .2s ease-in-out;
+}
+
+.nav-item:nth-of-type(1):hover ion-icon[name="chevron-down-outline"],
+.nav-item:nth-of-type(2):hover ion-icon[name="chevron-down-outline"] {
+  transform: rotate(180deg);
+}
+
+.nav-item:nth-of-type(1),
+.nav-item:nth-of-type(2) {
+  position: relative;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-item__link:hover {
+  color: var(--almost-black);
+}
+
+.nav-item:nth-of-type(1) .nav-item__submenu,
+.nav-item:nth-of-type(2) .nav-item__submenu {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  padding: 2.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--almost-white);
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:nth-of-type(1) .nav-item__submenu a {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item:nth-of-type(2) .nav-item__submenu {
+  left: 0;
+  width: 7rem;
+}
+
+.nav-item:nth-of-type(1):hover .nav-item__submenu,
+.nav-item:nth-of-type(2):hover .nav-item__submenu {
+  display: flex;
+}
+
+.nav-item__submenu a:hover,
+.nav-item__submenu a:hover {
+  color: black;
+}
+
+.usr-login {
+  display: flex;
+  gap: 3.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  color: var(--almost-black);
+}
+
+.btn-register {
+  border: 2px solid var(--medium-gray);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.btn-register:hover {
+  border: 2px solid var(--almost-black);
+  color: var(--almost-black);
+}
+
+.nav-icon {}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
