@@ -243,7 +243,7 @@ header {
     MEDIA QUERIES 
    ================ */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
   .backdrop {
     display: none;
@@ -322,11 +322,13 @@ header {
     display: block;
     border: none;
     background: none;
+    cursor: pointer;
   }
 
   ion-icon[name="menu-outline"],
   ion-icon[name="close-outline"] {
     font-size: 4rem;
+    color: var(--almost-black);
   }
 
   ion-icon[name="close-outline"] {
